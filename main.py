@@ -44,7 +44,7 @@ LINE = (
     "from your shopping list, so chapter three recommends buying more milk."
 )
 
-OUTPUT_DIR = os.environ.get("MAKEFUN_OUTPUT_DIR", "/output")
+OUTPUT_DIR = os.environ.get("MAKEFUN_OUTPUT_DIR") or "/output"
 
 
 def validate(line: str) -> None:
